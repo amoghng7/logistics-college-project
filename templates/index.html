@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<body>
+	<div id="header">
+		<div class="area">
+			<div id="logo">
+				<a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename = 'images/logo.png') }}" alt="LOGO" height="86" width="170" /></a>
+			</div>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="{{ url_for('home') }}">Home</a>
+				</li>
+				<li>
+					<a href="{{ url_for('about') }}">About</a>
+				</li>
+				<li>
+					<a href="{{ url_for('contact') }}">Contact</a>
+				</li>
+				<li>
+					<a href="{{ url_for('track') }}">Track</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="adbox">
+			<div class="area">
+				<ul>
+					<li>
+						<div>
+							<h2><span>LAND</span> TRANSPORT</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing elit mattis vestibulum venenatis metus.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2><span>Ocean</span> TRANSPORT</h2>
+							<p>
+								Posuere convallis platea mollis tristique habitant, pellentesque leo congue ad purus sagittis, eu lacinia fames proin.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2><span>Air</span> TRANSPORT</h2>
+							<p>
+								Quisque pulvinar eget imperdiet ante porttitor netus vehicula, fringilla suscipit sociosqu risus.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="area">
+			<div class="main">
+				<h2>Suscipit nam class</h2>
+				<p>
+					Dapibus litora felis suscipit phasellus natoque enim, porttitor dis netus habitasse at, mi sodales habitant non aliquam. Est ridiculus erat convallis quis vulputate dignissim elementum nisl, dapibus nascetur tortor sociosqu metus magnis potenti, pharetra
+					primis augue vel morbi conubia aptent. Purus proin sapien tempor risus aliquet dui, praesent cursus imperdiet nullam fusce fames, massa cum potenti vivamus nec.
+				</p>
+				<div id="features">
+					<h2>Why Choose Us</h2>
+					<ul>
+						<li>
+							<img src="{{ url_for('static',filename = 'images/agents.png') }}" alt="Img" height="100" width="100" />
+							<h3>Easy Transactions</h3>
+							<p>
+								Taciti volutpat consequat quam torquent pellentesque curabitur ornare nulla viverra penatibus class, diam tortor aliquet vitae blandit fermentum mi tristique ut libero parturient.
+							</p>
+						</li>
+						<li>
+							<img src="{{ url_for('static',filename = 'images/shopping.png') }}" alt="Img" height="100" width="100" />
+							<h3>Hassle Free</h3>
+							<p>
+								Nascetur bibendum aenean morbi posuere conubia sociosqu, enim pretium suspendisse sollicitudin laoreet donec, dui porttitor massa id litora. Fermentum tristique integer laoreet mauris venenatis quam sollicitudin primis mollis.
+							</p>
+						</li>
+						<li>
+							<img src="{{ url_for('static',filename = 'images/smiling.png') }}" alt="Img" height="100" width="100" />
+							<h3>Mobile Tracking</h3>
+							<p>
+								Vestibulum nostra nisl curabitur tincidunt dignissim tortor, congue condimentum erat facilisis in non, nascetur fames nam vivamus montes. Magna augue netus mauris platea ridiculus nisi turpis est faucibus ullamcorper, nam dictum ante congue justo fusce
+								per bibendum egestas pulvinar.
+							</p>
+						</li>
+						<li>
+							<img src="{{ url_for('static',filename = 'images/buildings.png') }}" alt="Img" height="100" width="100" />
+							<h3>World Wide Office</h3>
+							<p>
+								Felis sollicitudin maecenas torquent eget natoque porttitor cum sem. Ligula dis dui morbi est vivamus mattis nec, vulputate interdum fames varius felis rhoncus elementum, facilisis in nullam eu conubia integer.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="blog">
+				<h2>Recent Blog Post</h2>
+				<div class="frame">
+					<img src="{{ url_for('static',filename = 'images/checker.jpg') }}" alt="Img" height="216" width="268" />
+				</div>
+				<h3>We Aim Higher</h3>
+				<p>
+					Ultrices vel integer iaculis nascetur cras laoreet himenaeos, litora praesent lectus aliquam class non aliquet lobortis, at morbi vestibulum sapien arcu pellentesque. Duis arcu ac scelerisque eget magnis consequat dapibus diam fermentum quam ridiculus
+					placerat quisque eu accumsan, fusce auctor fringilla molestie sociosqu nulla bibendum faucibus convallis pellentesque dignissim egestas etiam tortor.
+				</p>
+			</div>
+		</div>
+	</div>
+	{% endblock %}

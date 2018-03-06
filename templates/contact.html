@@ -1,0 +1,94 @@
+{% extends "layout.html" %} {% block content %}
+
+<body>
+	<div id="header">
+		<div class="area">
+			<div id="logo">
+				<a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename = 'images/logo.png') }}" alt="LOGO" height="86" width="170" /></a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="{{ url_for('home') }}">Home</a>
+				</li>
+				<li>
+					<a href="{{ url_for('about') }}">About</a>
+				</li>
+				<li class="selected">
+					<a href="{{ url_for('contact') }}">Contact</a>
+				</li>
+				<li>
+					<a href="{{ url_for('track') }}">Track</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="contact" class="area">
+			<div class="section">
+				<h3>LOREM IPSUM DOLOR</h3>
+				<p>
+					Tincidunt molestie blandit quam aenean sollicitudin senectus placerat accumsan, luctus orci neque donec dictum laoreet hendrerit, ante eleifend elementum dis mollis risus potenti. Hac sed ut sagittis imperdiet posuere nam inceptos torquent cum, luctus
+					vivamus euismod blandit non netus rutrum fringilla, diam vulputate himenaeos facilisi montes fusce neque porta. Ad netus nam lacus praesent tempor risus senectus, lobortis litora cum torquent volutpat ut.
+				</p>
+				<p>
+					Tristique etiam porttitor conubia dui eget purus sociosqu, mus urna viverra montes aenean blandit, aliquam nisi nisl fusce sociis molestie. Class vehicula interdum felis fusce id taciti, euismod faucibus eu egestas duis platea convallis, pharetra commodo
+					libero tempor laoreet. Commodo gravida inceptos platea consequat quis, tellus integer vel pellentesque mollis class, cubilia volutpat litora magna.
+				</p>
+				<p>
+					Email: <a href=#>Forum</a> <span>Call or e-mail us for help with any aspect of your purchase, online or offline.</span>
+				</p>
+				<p class="numbers">
+					Call toll-free: 877 000 0000<br> Call toll-free: 866 000 0000<br> Toll-free fax: 877 000 0000
+				</p>
+				<p class="address">
+					<span>Mailing Address</span> AZ Logistics<br> 250 Lorem Ipsum Street<br> Jaofanr, Caknan 109935<br> Kiangab
+				</p>
+			</div>
+			<div class="section">
+				<h2 class="heading2">Why Choose Us</h2>
+				<ul class="list">
+					<li>
+						<img src="{{ url_for('static',filename = 'images/agents.png') }}" alt="Img" height="100" width="100" />
+						<div>
+							<h3>Easy Transactions</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing elit id rhoncus himenaeos, vestibulum torquent lacus magna odio cubilia posuere conubia urna, nec suspendisse ultricies nascetur porta mauris lectus luctus eleifend. Litora dis ultrices purus magna nam
+								turpis bibendum, malesuada penatibus consequat hac cubilia elementum blandit massa, sociis nec tempor porta commodo placerat.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="{{ url_for('static',filename = 'images/shopping.png') }}" alt="Img" height="100" width="100" />
+						<div>
+							<h3>Hassle Free</h3>
+							<p>
+								Arcu facilisis sollicitudin mi tempus condimentum nunc quam, suspendisse curae commodo placerat turpis nulla, quisque maecenas cras venenatis tellus quis. Convallis feugiat nascetur commodo netus maecenas neque duis facilisis lacus, urna quisque aenean
+								a suspendisse magna vivamus venenatis ad, aliquam pellentesque non nam condimentum habitasse rhoncus donec.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="{{ url_for('static',filename = 'images/smiling.png') }}" alt="Img" height="100" width="100" />
+						<div>
+							<h3>Mobile Tracking</h3>
+							<p>
+								Phasellus id ligula lobortis laoreet dapibus magnis turpis nibh, quam rhoncus sociosqu leo sociis suscipit aptent inceptos accumsan, tortor cum convallis ultrices ut dui habitasse. Gravida tristique velit netus fames dis aliquet, posuere in mauris duis
+								ligula maecenas enim, orci sagittis nam litora laoreet.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="{{ url_for('static',filename = 'images/buildings.png') }}" alt="Img" height="100" width="100" />
+						<div>
+							<h3>World Wide Office</h3>
+							<p>
+								This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website
+								template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	{% endblock %}

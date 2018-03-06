@@ -1,0 +1,130 @@
+{% extends "layout1.html" %}
+{% block content %}
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Hello, {{ name }}</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('register') }}" class="nav-elements">Register</a></li>
+            <li class="active"><a href="{{ url_for('admin') }}" class="nav-elements">Admin</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{url_for('logout')}}" class="nav-elements"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" style="margin-top:50px; border-style: none !important; height: 150%;">
+    <form class="well form-horizontal" action="{{ url_for('add_admin')}}" method="post" id="contact_form">
+        <fieldset>
+
+            <!-- Form Name -->
+            <center>
+                <legend>
+                    <h3><img src="{{ url_for('static',filename = 'images/logo.png') }}" alt="LOGO" height="50" width="80" /> User Registration</h3></legend>
+                    <br />
+                    {% if error != None %}
+                        <p style="color: #ae1d1d;"> {{ error }} </p>
+                    {% endif %}
+            </center>
+            <hr>
+            <center>
+                <h5></h5></center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="user_name" placeholder="Ex. USER_00X" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="name" placeholder="Ex. John doe" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Password</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input name="password1" placeholder="Password" class="form-control" type="password">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Confirm Password</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input name="password2" placeholder="Confirm Password" class="form-control" type="password">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Location</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                        <input name="location" placeholder="Ex. Bangalore" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- radio checks -->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Superuser?</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label>
+                             <input type="radio" name="su" value="True" /> Yes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="su" value="False" /> No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning" style="background-color:#07beb8 !important; border: #07beb8;"><span class="">&nbsp &nbsp Add &nbsp &nbsp</span></button>
+                </div>
+            </div>
+    </form>
+    <br>
+    <br>
+    <br>
+
+</div>
+
+{% endblock %}

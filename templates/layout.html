@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }} | AZ Logistics</title>
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/styles.css') }}" type="text/css" />
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/animate.css')}}">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/style1.css')}}">
+
+	<style>
+		#block1 {
+			margin: 10px 10px;
+			padding: 20px;
+			width: 180px;
+			float: left;
+		}
+
+		#block2 {
+			margin: 10px 20px;
+			padding: 20px;
+			width: 210px;
+			float: right;
+		}
+
+		.wrapper {
+			max-width: 530px;
+			margin: 0 auto;
+			overflow: hidden;
+			float: left;
+			background: #ffffff;
+		}
+
+		.alert {
+			padding: 20px;
+			background-color: #f44336;
+			color: white;
+		}
+
+		.closebtn {
+			margin-left: 15px;
+			color: white;
+			font-weight: bold;
+			float: right;
+			font-size: 22px;
+			line-height: 20px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.closebtn:hover {
+			color: black;
+		}
+
+		.button {
+		    background-color: #665851; /* Green */
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+{% block content %} {% endblock %}
+<div id="footer">
+	<span class="divider"></span>
+	<div class="area">
+		<div id="connect">
+			<a href=# target="_blank" class="googleplus"></a> <a href=# target="_blank" class="mail"></a> <a href=# target="_blank" class="facebook"></a> <a href=# target="_blank" class="twitter"></a>
+		</div>
+		<p>
+			© 2017 AZ Logistics. All Rights Reserved.
+		</p>
+	</div>
+</div>
+</body>
+
+</html>
+
+<script>
+	$(document).ready(function() {
+		$('#logo').addClass('animated fadeInDown');
+		$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>

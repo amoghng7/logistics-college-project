@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>AZ logistics</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/animate.css')}}">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="{{url_for('static',filename = 'css/styles.css') }}" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="h1">
+		<!--<center><strong><h1 class ="logo" style="color: #000; font-size:60px;">AZ logistics Employee Login</h1></strong></center>-->
+		<br />
+		<br />
+	</div>
+	<div class="container">
+		<link rel="stylesheet" href="{{url_for('static',filename = 'css/style2.css')}}">
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h4><img src="{{ url_for('static',filename = 'images/logo.png') }}" position = "" height = "60" width = "110"/></h4>
+				<h2>Employee LOG IN</h2>
+			</div>
+			<form action=" {{ url_for('submit') }} " method=post>
+				<label for="username">Username</label>
+				<br/>
+				<input type="text" name="id">
+				<br/>
+				<label for="password">Password</label>
+				<br/>
+				<input type="password" name="password">
+				<br/>
+				{% if error != None %}
+					<strong style="color: #ae1d1d !important;">{{ error }}</strong>
+				{% endif %}
+				<br />
+				<br />
+				<button type="submit">Sign In</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+<script>
+	$(document).ready(function() {
+		$('#logo').addClass('animated fadeInDown');
+		$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>
+
+</html>

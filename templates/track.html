@@ -1,0 +1,54 @@
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+
+<body>
+	<div id="header">
+		<div class="area">
+			<div id="logo">
+				<a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename = 'images/logo.png') }}" alt="LOGO" height="86" width="170" /></a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="{{ url_for('home') }}">Home</a>
+				</li>
+				<li>
+					<a href="{{ url_for('about') }}">About</a>
+				</li>
+				<li>
+					<a href="{{ url_for('contact') }}">Contact</a>
+				</li>
+				<li class="selected">
+					<a href="{{ url_for('track') }}">Track</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container" style="height: 470px !important;">
+
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Track</h2>
+			</div>
+			<form action="{{ url_for('authenticate',tid=id, x=x )}}" method=post>
+				<h6></h6>
+				<label for="username">Tracking ID</label>
+				<h6></h6>
+				<br/>
+				<input type="text" name="id">
+				<br/>
+				<br>
+				{% if error != None %}
+					<strong style="color: #ae1d1d !important;">{{ error }}</strong>
+				{% endif %}
+				<br />
+				<br />
+				<button type="submit">Track</button>
+				<br>
+			</form>
+		</div>
+	</div>
+	<div class="blog">
+	</div>
+</body>
+{% endblock %}

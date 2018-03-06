@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<body>
+	<div id="header">
+		<div class="area">
+			<div id="logo">
+				<a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename = 'images/logo.png') }}" alt="LOGO" height="86" width="170" /></a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="{{ url_for('home') }}">Home</a>
+				</li>
+				<li class="selected">
+					<a href="{{ url_for('about') }}">About</a>
+				</li>
+				<li>
+					<a href="{{ url_for('contact') }}">Contact</a>
+				</li>
+				<li>
+					<a href="{{ url_for('track') }}">Track</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="about" class="area">
+			<div class="section">
+				<div class="box">
+					<div>
+						<div>
+							<h3>Shipping and Transportation</h3>
+							<p>
+								A egestas nullam sed dignissim diam bibendum curae convallis pellentesque ridiculus, ornare varius molestie cubilia tortor habitant auctor sodales. Vivamus cras donec dui ut aptent ad montes ac nascetur rutrum proin magna, ultricies velit fames accumsan
+								eleifend torquent mattis praesent arcu condimentum facilisis. Iaculis consequat litora orci praesent sociosqu habitant mauris, in bibendum non cubilia cum ante dignissim, arcu rhoncus massa leo sed rutrum. Nibh ante tellus dapibus dictumst eleifend
+								tempus fringilla orci auctor urna, nullam gravida lacus maecenas pulvinar eget feugiat porta elementum bibendum, scelerisque augue suspendisse commodo torquent odio class mauris iaculis. Dictumst viverra scelerisque at phasellus parturient commodo,
+								curae dignissim rhoncus fringilla congue ultrices risus, dapibus mi magnis consequat quam.
+							</p>
+							<h3>Reliable Shipping Partners</h3>
+							<p>
+								Curabitur magna iaculis senectus at rutrum fames erat penatibus, facilisis nibh nec duis condimentum aliquet aptent mattis libero, ut dictum morbi dui lobortis molestie litora. Hendrerit nostra sociosqu quis facilisis mauris cursus, potenti nec iaculis
+								cras aliquet lacinia, hac urna inceptos elementum erat. Lacinia egestas vivamus ad praesent tincidunt bibendum porta platea varius quis aptent, consequat nec mattis eros augue habitasse curae ante sociosqu litora.
+							</p>
+							<h3>A Passionate and Experienced Fulfillment Team</h3>
+							<p>
+								Scelerisque aptent potenti varius fermentum mauris eget nisl cras placerat erat interdum, euismod nisi vivamus donec porttitor viverra cum porta lacinia diam, vehicula sociis nascetur laoreet sodales pretium est litora semper nullam. Integer nisl penatibus
+								cubilia eleifend himenaeos phasellus duis fringilla, volutpat faucibus vehicula sagittis semper erat ridiculus, ac sodales in nam iaculis laoreet magnis. Luctus pulvinar mollis viverra nascetur arcu laoreet mattis elementum, sociosqu primis dignissim
+								ligula ac dis tellus risus sodales, habitasse sapien condimentum nec cubilia cum massa.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="box">
+					<div>
+						<div>
+							<h2>LAND TRANSPORT</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing elit id rhoncus himenaeos, vestibulum torquent lacus magna odio cubilia posuere conubia urna, nec suspendisse ultricies nascetur porta mauris lectus luctus eleifend. Litora dis ultrices purus magna nam
+								turpis bibendum, malesuada penatibus consequat hac cubilia elementum blandit massa, sociis nec tempor porta commodo placerat. Est porta magnis massa commodo proin egestas dictum arcu sem, in bibendum nulla dis et sociosqu ante nec, vehicula eu
+								imperdiet mi ultrices eleifend etiam aenean.</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div>
+						<div>
+							<h2>Ocean TRANSPORT</h2>
+							<p>
+								Arcu facilisis sollicitudin mi tempus condimentum nunc quam, suspendisse curae commodo placerat turpis nulla, quisque maecenas cras venenatis tellus quis. Convallis feugiat nascetur commodo netus maecenas neque duis facilisis lacus, urna quisque aenean
+								a suspendisse magna vivamus venenatis ad, aliquam pellentesque non nam condimentum habitasse rhoncus donec. Euismod taciti tempus elementum sollicitudin imperdiet platea tristique, leo massa velit egestas cursus aptent volutpat, laoreet quisque
+								at posuere proin fermentum.</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div>
+						<div>
+							<h2>Air TRANSPORT</h2>
+							<p>
+								Phasellus id ligula lobortis laoreet dapibus magnis turpis nibh, quam rhoncus sociosqu leo sociis suscipit aptent inceptos accumsan, tortor cum convallis ultrices ut dui habitasse. Gravida tristique velit netus fames dis aliquet, posuere in mauris duis
+								ligula maecenas enim, orci sagittis nam litora laoreet. Elementum per vestibulum integer quam habitant viverra facilisi est vitae nulla, consequat purus at interdum praesent imperdiet sodales dignissim vehicula, taciti congue vivamus mollis quis
+								eleifend diam magna dictum.</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>AZ-Logistics | Success</title>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/gridforms/1.0.10/gridforms.min.css' rel='stylesheet' type='text/css'>
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body style="background: #ECEEEF !important; align: center !important;">
+    <div class="jumbotron text-xs-center" style=" position: relative;">
+        <img src="{{ url_for('static',filename = 'images/logo.png') }}" position="" height="100" width="200" />
+        <br />
+        <br />
+        <p class="lead"><strong>Package registered successfully!</strong></p>
+        <p><b>Tracking ID: </b> {{ track_id }} </p>
+        <hr />
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item</td>
+                        <td>{{pdet[1]}}</td>
+                    </tr>
+                    <tr>
+                        <td>From</td>
+                        <td>{{oaddr[0]}}<br />{{oaddr[1]}}<br />{{oaddr[2]}}<br />{{oaddr[3]}}<br />{{oaddr[4]}}</td>
+                    </tr>
+                    <tr>
+                        <td>To</td>
+                        <td>{{daddr[0]}}<br />{{daddr[1]}}<br />{{daddr[2]}}<br />{{daddr[3]}}<br />{{daddr[4]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="{{url_for('register')}}" role="button">Back to Home Page</a>
+            <a class="btn btn-primary btn-sm" href="{{url_for('invoice', track_id = track_id)}}" target="blank" role="button">Print Invoice</a>
+        </p>
+    </div>
+</body>
+
+</html>
