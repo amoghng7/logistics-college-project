@@ -9,7 +9,7 @@ This is a logistics project to automate logistics management. This application a
 You will need Python and related tools installed:
 
 ```
-Python 3 
+Python 3
 PIP
 VirtualEnv: pip install virtualenv (Useful if you need to run multiple versions)
 MySQL
@@ -24,7 +24,7 @@ virtualenv <name>
 <name>/bin/pip install -r requirements.txt
 ```
 
-Make sure your MySQL server is up and running and import the MySQLdump (logistics.sql) to your MySQL database. 
+Make sure your MySQL server is up and running and import the MySQLdump (logistics.sql) to your MySQL database.
 Then run the development server:
 
 ```
@@ -48,5 +48,7 @@ Password: asdfghjkl
 [Home Page template](https://freewebsitetemplates.com/preview/logistics/index.html)
 
 [Login page template](https://dribbble.com/shots/2385490--001-Sign-In-Page/attachments/459757)
+
+[404 template](https://w3layouts.com/sleet-flat-responsive-widget-template/)
 
 PS - Let me know if you need me to add or remove something.

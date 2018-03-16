@@ -194,3 +194,8 @@ def printp():
     daddr = ret.disp_daddress(tid)
     return render_template('print.html', track_id=tid,
                            pdet=pdet, oaddr=oaddr, daddr=daddr)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
