@@ -6,6 +6,8 @@ This is a logistics project to automate logistics management. This application a
 
 ## Requirements:
 
+You will need Python and related tools installed:
+
 ```
 Python 3 
 PIP
