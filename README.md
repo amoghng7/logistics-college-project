@@ -39,6 +39,7 @@ http://127.0.0.1:8080/login
 login using following credentials:
 
 Username: USER_001
+
 Password: asdfghjkl
 
 
