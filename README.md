@@ -22,16 +22,27 @@ virtualenv <name>
 <name>/bin/pip install -r requirements.txt
 ```
 
-Make sure your MySQL server is up and running
+Make sure your MySQL server is up and running and import the MySQLdump (logistics.sql) to your MySQL database. 
 Then run the development server:
 
 ```
 <name>/bin/python run.py
 ```
+The website will be up on:
+
+http://127.0.0.1:8080/
+http://127.0.0.1:8080/login
+
+login using following credentials:
+
+Username: USER_001
+Password: asdfghjkl
+
 
 ### Links for templates:
 
 [Home Page](https://freewebsitetemplates.com/preview/logistics/index.html)
+
 [Login page](https://dribbble.com/shots/2385490--001-Sign-In-Page/attachments/459757)
 
 PS - Let me know if you need me to add or remove something.
