@@ -1,7 +1,7 @@
 # logistics-college-project
 
 
-This is a logistics project to automate logistics management. This application alows customer to track their package status and it's location. It also provides an employee login portal where an employee can login and add packages and new users. This project is built on [flask](http://flask.pocoo.org/) for backend and [MySQL](https://www.mysql.com/) for DB.
+This is a logistics project to automate logistics management. This application alows customer to track their package status and it's location. It also provides an employee login portal where an employee can login and add packages and new users. This project is built on [flask](http://flask.pocoo.org/) and [MySQL](https://www.mysql.com/).
 
 
 ## Requirements:
