@@ -8,12 +8,12 @@ This is a logistics project to automate logistics management. This application a
 
 You will need Python and related tools installed:
 
-```
-Python 3
-PIP
-VirtualEnv: pip install virtualenv (Useful if you need to run multiple versions)
-MySQL
-```
+
+* Python 3
+* PIP
+* VirtualEnv: ```pip install virtualenv``` (Useful if you need to run multiple versions)
+* MySQL
+
 
 ## Instalation:
 
